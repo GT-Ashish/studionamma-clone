@@ -1,0 +1,101 @@
+/* *********************************general********************************* */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 228, 228);
+    font-family:"Barlow Condensed", sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* *********************************general********************************* */
+/* *********************************typography********************************* */
+
+.hero-text{
+    font-size: 13rem;
+    font-weight: bold;
+    line-height: .75em;
+}
+
+/* *********************************typography********************************* */
+
+
+/* *********************************header********************************* */
+.header-top, .header-bottom{
+    position: fixed;
+    left: 1em;
+    right: 1em;
+    z-index: 1;
+}
+
+.header-bottom{
+   bottom : 0;
+   align-items: end;
+}
+
+.header-top{
+    top: 1em;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+.whatsapp-button{
+    border: none;
+    padding: 1em 1.2em;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 255);
+}
+
+
+.header-bottom-right i{
+    font-size: 2.5rem;
+}
+
+.whatsapp-button-container{
+    display: flex;
+    justify-content: end;
+}
+
+.header-top-right{
+    min-width: 380px;
+}
+
+.header-top-left{
+    min-width: 270px;
+}
+/* *********************************header********************************* */
+/* *********************************hero********************************* */
+
+.hero-text{
+    text-align: center;
+    margin-top: .2em;
+    margin-bottom: 0;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+/* *********************************hero********************************* */
+
+.video-section video{
+    width: 100%;
+    border-radius: 10px;
+}
