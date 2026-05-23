@@ -174,20 +174,19 @@ header a{
     margin: 1em 0;
 }
 
-.services-link-container{
+.services-link-container, .work-link-container{
     display: flex;
     justify-content: center;
     gap: 15px;
     align-items: center;
-    padding: 1em;
 }
 
-.services-link-container a{
+.services-link-container a, .work-link-container a{
     text-decoration: none;
     color: inherit;
 }
 
-.services-link-container i{
+.services-link-container i, .work-link-container i{
     margin-bottom: 5px;
 }
 
@@ -198,6 +197,32 @@ header a{
 }
 
 /* ****************************************logos*************************************************** */
+/* ****************************************work*************************************************** */
+
+.work-primary-text{
+    font-size: 10rem;
+    font-weight: 1000;
+    letter-spacing: -.03em;
+    line-height: .9em;
+    margin-bottom: 0;
+}
+
+.work-primary img{
+    width: 1em;
+    display: inline-block;
+    border-radius: .05em;
+}
+
+.work-secondary p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.work-link-container{
+    justify-content: left;
+}
+/* ****************************************work*************************************************** */
 
 
 
