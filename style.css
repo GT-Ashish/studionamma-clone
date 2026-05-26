@@ -37,7 +37,7 @@ a{
 /* *********************************general********************************* */
 /* *********************************typography********************************* */
 .hero-text{
-    font-size: 13rem;
+    font-size: 18vw;
     letter-spacing: -.04em;
     font-weight: 1000;
     line-height: .75em;
@@ -78,6 +78,7 @@ a{
 .whatsapp-button-container{
     display: flex;
     justify-content: end;
+    position: relative;
 }
 
 .header-top-right{
@@ -87,6 +88,105 @@ a{
 .header-top-left{
     min-width: 270px;
 }
+
+.whatsapp-card{
+    width: 355px;
+    position: absolute;
+    background: rgb(21, 33, 40);
+    color: white;
+    top: -550%;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-family: arial;
+    border-radius: 15px;
+}
+
+.whatsapp-card-top{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.147);
+    padding: 1.4em;
+}
+
+.whatsapp-card-primary img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
+.whatsapp-card-primary{
+    position: relative;
+}
+
+
+.whatsapp-card-bottom{
+    margin: 3em 1em 1em;
+}
+
+.whatsapp-text{
+    background-color: rgba(255, 255, 255, 0.149);
+    font-size: 15px;
+    line-height: 20px;
+    padding: .5em 0 .5em 1em;
+    width: 254px;
+    border-radius: 15px;
+    margin-bottom: 2em;
+}
+.whatsapp-card-secondary span{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.whatsapp-card-close-button{
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 1rem;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.476);
+}
+
+.online-dot{
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(74, 213, 4);
+    border-radius: 4px;
+}
+
+.chat-button-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.chat-button{
+    background: blue;
+    color: white;
+    padding: 1em 2em 1em 4em;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+
+.chat-button-container i{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+
 /* *********************************header********************************* */
 /* *********************************hero********************************* */
 
