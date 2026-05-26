@@ -99,6 +99,7 @@ a{
     font-weight: 500;
     font-family: arial;
     border-radius: 15px;
+    display: none;
 }
 
 .whatsapp-card-top{
