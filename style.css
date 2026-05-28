@@ -49,6 +49,15 @@ a{
 
 
 /* *********************************header********************************* */
+.landing-video video{
+    z-index: 2;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 .header-top, .header-bottom{
     position: fixed;
     left: 1em;
@@ -211,7 +220,7 @@ a{
     background: transparent;
     top: 50%;
     left: 50%;
-    transform: translate(10%, 10%);
+    transform: translate(-50%, -50%); 
     transition: all .5s ease-out;
     border-radius: 10px;
 }
@@ -222,6 +231,15 @@ a{
     object-fit: cover;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.cursor-blue-dot{
+    /* height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 50%; */
+    /* z-index: 1000; */
+    /* transform: translate(20%, 2%); */
 }
 
 /* *********************************hero********************************* */
