@@ -74,22 +74,8 @@ a{
     top: 1em;
 }
 
-.whatsapp-button{
-    border: none;
-    padding: 1em 1.2em;
-    border-radius: 50%;
-    background-color: rgb(0, 0, 255);
-}
-
-
 .header-bottom-right i{
     font-size: 2.5rem;
-}
-
-.whatsapp-button-container{
-    display: flex;
-    justify-content: end;
-    position: relative;
 }
 
 .header-top-right{
@@ -100,12 +86,36 @@ a{
     min-width: 270px;
 }
 
+/* *********************************header********************************* */
+/* *********************************whatsapp-button********************************* */
+/* *********************************whatsapp-button********************************* */
+
+.whatsapp-button{
+    border: none;
+    padding: 1em 1.2em;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 255);
+}
+
+.whatsapp-button i{
+    font-size: 2.2rem;
+}
+
+.whatsapp-button-container{
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    bottom: 2.5em;
+    right: 1.2em;
+    z-index: 10;
+}
+
 .whatsapp-card{
     width: 355px;
     position: absolute;
     background: rgb(21, 33, 40);
     color: white;
-    top: -550%;
+    top: -580%;
     letter-spacing: 0;
     font-weight: 500;
     font-family: arial;
@@ -197,9 +207,6 @@ a{
     left: 28%;
     transform: translate(-50%, -50%);
 }
-
-
-/* *********************************header********************************* */
 /* *********************************hero********************************* */
 
 .hero{
