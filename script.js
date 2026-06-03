@@ -2,24 +2,27 @@ let cursor = document.querySelector('.cursor');
 let heroSection = document.querySelector('.hero');
 let header = document.querySelector('header');
 let timeout;
-heroSection.addEventListener("mousemove", (e) =>{//wrong use define the listener in  a function then use with both header and hero
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+heroSection.addEventListener("mousemove", (e) =>{   
+    mouseMove(e);
+    landingMouseMoveAnimation();
+});
+header.addEventListener("mousemove", (e) =>{
+    mouseMove(e);
+    landingMouseMoveAnimation();
+});
+
+function landingMouseMoveAnimation(){
     cursor.style.transform = "translate(5%, 5%) scale(0.95)";
     clearTimeout(timeout);
     timeout = setTimeout(() =>{
         cursor.style.transform = "translate(5%, 5%) scale(1)";
     }, 500);
-});
-header.addEventListener("mousemove", (e) =>{//wrong use define the listener in  a function then use with both header and hero
+}
+
+function mouseMove(e){
     cursor.style.left = e.clientX + "px";
     cursor.style.top = e.clientY + "px";
-    cursor.style.transform = "translate(10%, 10%) scale(0.95)";
-    clearTimeout(timeout);
-    timeout = setTimeout(() =>{
-        cursor.style.transform = "translate(10%, 10%) scale(1)";
-    }, 500);
-});
+}
 
 let whatsappButton = document.querySelector('.whatsapp-button');
 let whatsappCard = document.querySelector('.whatsapp-card');
