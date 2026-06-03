@@ -294,11 +294,25 @@ a{
 
 .playground-cards-container{
     flex-wrap: wrap;
-    gap: .5em;    
+    row-gap: 1.5em;      
 }
 
 .playground-card{
     width: 49%;
+    position: relative;
+    transition: all linear .2s;
+}
+
+.playground-card:hover{
+    scale: .98;
+}
+
+.playground-card:hover video{
+    opacity: 1;
+}
+
+.playground-card:hover img{
+    filter: blur(3px);
 }
 
 .playground-card img{
@@ -306,6 +320,16 @@ a{
     border-radius: .5em;
 }
 
+.playground-video{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 1;
+}
 
 /* *********************************playground********************************* */
 /* *********************************services********************************* */
